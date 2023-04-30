@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sns1.css">
+    <script src="https://kit.fontawesome.com/808a41e94e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1><a href="#">HI's tagram</a></h1>
+            <div class="head-icon">
+                <i class="fa-regular fa-newspaper"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <section class="main-left">
+                <div class="main1">
+                    <div class="main1-inner">
+                        <div class="me"></div>
+                        <input type="text" placeholder="오늘 무슨 일이 있었나요?">
+                    </div>
+                    <a href="#"><i class="fa-regular fa-image"></i></a>
+                </div>
+                <div class="main2">
+                    <div class="user">
+                        <div class="me"></div>
+                        <div class="user-main">
+                            <p>HI</p>
+                            <span>11:27pm, yesterday</span>
+                        </div>
+                    </div>
+                    <p class="main2-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quod, doloremque tempora cum iusto error sed aliquam. Ab vitae possimus iste pariatur earum impedit odio ut, non, assumenda eos minus.
+                    </p>
+                    <div class="icons">
+                        <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                        <span>25k</span>
+                        <a href="#"><i class="fa-regular fa-message"></i></a>
+                        <span>10k</span>
+                    </div>
+                </div>
+                <div class="main3">
+                    <div class="user">
+                        <div class="me"></div>
+                        <div class="user-main">
+                            <p>HI</p>
+                            <span>11:27pm, yesterday</span>
+                        </div>
+                    </div>
+                    <p class="main3-txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium non odio vitae, reiciendis alias corrupti sunt, vel ducimus neque quia voluptatem earum unde quis quaerat. Excepturi repellat eaque accusamus recusandae.
+                    </p>
+                    <img src="images/maldives.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                        <span>25k</span>
+                        <a href="#"><i class="fa-regular fa-message"></i></a>
+                        <span>10k</span>
+                    </div>
+                </div>
+                <div class="main3">
+                    <div class="user">
+                        <div class="me"></div>
+                        <div class="user-main">
+                            <p>HI</p>
+                            <span>11:27pm, yesterday</span>
+                        </div>
+                    </div>
+                    <p class="main3-txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium non odio vitae, reiciendis alias corrupti sunt, vel ducimus neque quia voluptatem earum unde quis quaerat. Excepturi repellat eaque accusamus xrecusandae.
+                    </p>
+                    <img src="images/beach.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                        <span>25k</span>
+                        <a href="#"><i class="fa-regular fa-message"></i></a>
+                        <span>10k</span>
+                    </div>
+                </div>
+            </section>
+            <section class="main-right">
+                <a href="#">
+                    <div class="profile">
+                        <div class="me"></div>
+                        <p>HI</p>
+                    </div>
+                </a>
+                <p>나의 친구</p>
+                <a href="#">
+                    <div class="profile">
+                        <div class="cate"></div>
+                        <p>Cate Blanchett</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="profile">
+                        <div class="hem"></div>
+                        <p>Hemtube</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="profile">
+                        <div class="hea"></div>
+                        <p>HeaJooo</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="profile">
+                        <div class="kristen"></div>
+                        <p>Kristen Stewart</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="profile">
+                        <div class="eva"></div>
+                        <p>Eva Green</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="profile">
+                        <div class="dia"></div>
+                        <p>Diamonds</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <address><i>&copy; HI's tagram co.</i></address>
+    </footer>
+</body>
+</html>

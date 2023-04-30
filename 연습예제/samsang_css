@@ -1,0 +1,444 @@
+.header-inner {
+  width: 100%;
+  min-width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.header-inner h1 a {
+  display: block;
+  width: 176px;
+  height: 36px;
+  background: url(https://www.samsungsem.com/resources/images/kr/common/logo.png)
+    0 50% no-repeat;
+  font-size: 0;
+  text-indent: -9999px;
+}
+.gnb-list {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.depth1 {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  min-width: 1200px;
+  padding: 38px 0;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.depth1-list {
+  height: 255px;
+  display: flex;
+}
+.depth1-list > li > a:first-child {
+  font-weight: bold;
+  color: #1428a0;
+  display: block;
+  font-size: 15px;
+}
+.depth1-list > li:nth-of-type(2),
+.depth1-list > li:nth-of-type(3),
+.depth1-list > li:nth-of-type(4) {
+  padding-left: 48px;
+  margin-left: 48px;
+  position: relative;
+}
+.depth1-list > li:nth-of-type(2)::before,
+.depth1-list > li:nth-of-type(3)::before,
+.depth1-list > li:nth-of-type(4)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+}
+.depth2-list > li > a {
+  display: block;
+  margin-top: 22px;
+  font-size: 14px;
+}
+.depth-inner {
+  display: flex;
+}
+.depth-inner > .depth2-list:first-child {
+  margin-right: 58px;
+}
+
+.util-area {
+  display: flex;
+}
+.util-menu {
+  display: flex;
+  width: 184px;
+}
+.util-menu > a > i,
+.util-menu-inner {
+  display: block;
+  width: 60px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.util-menu-inner {
+  cursor: pointer;
+}
+.util-menu-inner > span {
+  font-size: 15px;
+  font-weight: bold;
+}
+.util-menu i {
+  font-size: 20px;
+  position: relative;
+}
+.util-menu > a > i::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #ddd;
+  right: 0;
+  top: 31px;
+}
+.util-menu-inner:nth-of-type(1) > span:nth-of-type(1) {
+  position: relative;
+}
+.util-menu-inner:nth-of-type(1) > span:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #ddd;
+  right: -15px;
+  top: 7px;
+}
+.searchBtn {
+  width: 60px;
+  height: 70px;
+  background-color: #043285;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-wrap,
+.searchArea {
+  display: none;
+}
+.searchBtn:active .searchArea,
+.searchBtn:active .search-wrap {
+  display: block;
+}
+.searchArea {
+  width: 100vw;
+  min-width: 1200px;
+  height: 260px;
+  background-color: #707280;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background: url(https://www.samsungsem.com/resources/images/kr/common/srch_pop_bg.jpg)
+    no-repeat;
+  cursor: default;
+}
+.search-inner {
+  width: 660px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.search-box {
+  width: 660px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #7fa6d3;
+}
+.search-form {
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  position: relative;
+}
+.search-form input {
+  width: 605px;
+  height: 55px;
+  padding: 0 0 0 20px;
+  border: 0 none;
+  line-height: 57px;
+  box-sizing: border-box;
+  font-size: 15px;
+  outline: none;
+}
+.search-form button {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: #333333;
+  width: 45px;
+  height: 45px;
+  line-height: 49px;
+  text-align: center;
+}
+.search-form button i {
+  font-size: 22px;
+  color: #fff;
+}
+.search-wrap {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  position: fixed;
+  cursor: default;
+}
+.closeBtn {
+  width: 60px;
+  height: 70px;
+  background-color: #043285;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  font-weight: 300;
+}
+.closeBtn i {
+  color: #fff;
+  font-size: 28px;
+}
+.search-btn-area {
+  display: flex;
+  justify-content: space-between;
+}
+.search-btn-area a {
+  display: block;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #eeeeee;
+  color: #000;
+  font-weight: 300;
+}
+.search-btn-area a::after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 9px;
+  margin-left: 8px;
+  background: url(https://www.samsungsem.com/resources/images/kr/common/btn_arrow_ico_m.png)
+    0 50% no-repeat;
+  background-size: 5px 9px;
+  content: "";
+}
+.company > a {
+  display: block;
+  height: 70px;
+  font-weight: bold;
+  position: relative;
+  line-height: 70px;
+  font-size: 17.5px;
+}
+.company:hover > a::after {
+  transform: translateX(-50%);
+  width: 100%;
+  transition: width 0.4s ease-in-out;
+}
+.company > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  width: 0;
+  background-color: #1428a0;
+}
+.depth1 > a {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 17px 20px;
+  width: 880px;
+  margin-top: 30px;
+  position: relative;
+}
+.depth1 > a::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 28.5px;
+  width: 10px;
+  height: 17px;
+  background: url(https://www.samsungsem.com/resources/images/kr/common/btn_arrow_ico_l.png);
+}
+.depth1 > a strong {
+  color: #043285;
+  font-size: 17px;
+}
+.depth1 > a p {
+  font-size: 13.5px;
+  margin-top: 9px;
+}
+.gnb-list .company:nth-child(2) .depth1-list {
+  padding-left: 130px;
+  height: 175px;
+}
+.gnb-list .company:nth-child(3) .depth1-list {
+  height: 103px;
+  padding-left: 30px;
+}
+.gnb-list .company:nth-child(4) .depth1-list {
+  padding-left: 120px;
+}
+.gnb-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  box-sizing: border-box;
+}
+.gnb-btn a {
+  display: block;
+  width: 340px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 17px 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  margin-top: 30px;
+  position: relative;
+}
+.gnb-btn a::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 28.5px;
+  width: 10px;
+  height: 17px;
+  background: url(https://www.samsungsem.com/resources/images/kr/common/btn_arrow_ico_l.png);
+}
+.gnb-btn a strong {
+  font-size: 17.5px;
+}
+.gnb-btn a p {
+  font-size: 13px;
+  margin-top: 8px;
+}
+.gnb-list .company:nth-child(4) .depth1-list {
+  height: 200px;
+}
+.gnb-list .company:nth-child(5) .depth1-list {
+  height: 130px;
+}
+.gnb-list .company:last-child .depth1-list > li:nth-of-type(5) {
+  padding-left: 48px;
+  margin-left: 48px;
+  position: relative;
+}
+.gnb-list .company:last-child .depth1-list > li:nth-of-type(5)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+}
+.strongA {
+  font-weight: bold;
+  color: #1428a0;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+.depth1 {
+  display: none;
+}
+.company:first-child:hover > .depth1 {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.company:nth-child(2):hover > .depth1 {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.company:nth-child(3):hover > .depth1 {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.company:nth-child(4):hover > .depth1 {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.company:nth-child(5):hover > .depth1 {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.util-sns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  display: none;
+  position: relative;
+}
+.util-sns::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  top: -3px;
+  left: 0;
+  background-color: #043285;
+}
+.util-menu-inner:hover .util-sns {
+  display: block;
+}
+.util-sns li {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.util-sns li i {
+  display: block;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.util-menu-inner:last-child .util-sns a {
+  font-weight: 300;
+  font-size: 15px;
+}

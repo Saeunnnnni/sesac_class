@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12day</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/12day.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Nature Skin</h1>
+        <ul class="header-list">
+          <li>Nature Skin</li>
+          <li>Guide Info</li>
+          <li>Reservation</li>
+          <li>Custom</li>
+        </ul>
+      </div>
+      <div class="about-skin">
+        <section class="about-des">
+          <div class="about-title">
+            <h1>About Nature skin</h1>
+          </div>
+          <h2>Lorem ipsum dolor.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+            aperiam dignissmos voluptatibus ipsam cupiditate eaque vel, tempora
+            asperiores esse, consequuntur tempore ipsa quis nisi minus sint
+            facilis praesentirm. Sunt, ipsa!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+            aperiam dignissmos voluptatibus ipsam cupiditate eaque vel, tempora
+            asperiores esse, consequuntur tempore ipsa quis nisi minus sint
+            facilis praesentirm. Sunt, ipsa!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+            aperiam dignissmos voluptatibus ipsam cupiditate eaque vel, tempora
+            asperiores esse, consequuntur tempore ipsa quis nisi minus sint
+            facilis praesentirm. Sunt, ipsa!
+          </p>
+        </section>
+        <section class="about-img">
+          <img src="images/subimg01.png" alt="" />
+          <img src="images/subimg02.png" alt="" />
+          <img src="images/subimg03.png" alt="" />
+        </section>
+      </div>
+      <div class="footer">
+        <p>© Nature Skin.</p>
+      </div>
+    </div>
+  </body>
+</html>

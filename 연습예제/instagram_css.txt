@@ -1,0 +1,222 @@
+body {
+    height: 100%;
+    background-color: #f4f3f383;
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: #fff;
+}
+
+header .inner {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.inner>h1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inner .head-icon>i {
+    margin-left: 10px;
+    color: gray;
+}
+
+/* main, me, user*/
+.wrap {
+    display: flex;
+    width: 800px;
+    margin: auto;
+}
+
+.me {
+    width: 40px;
+    height: 40px;
+    background: url(../images/tomato.png) no-repeat center / cover;
+    border-radius: 100%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user .user-main {
+    margin-left: 10px;
+}
+
+.user .user-main>p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.user .user-main>span {
+    font-size: 10px;
+    color: #bbb;
+}
+
+/* main left */
+.main-left {
+    width: 70%;
+}
+
+.main-left .main1 {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-left .main1-inner {
+    display: flex;
+}
+
+.main-left .main1-inner>input {
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+
+.main-left .main1-inner>input::placeholder {
+    color: #aaaa;
+    font-size: 11px;
+}
+
+.main1>a {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #dddd;
+}
+
+.main-left .main2 {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main2 .main2-txt {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.main2 .icons {
+    color: #bbb;
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.main-left .main3 {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main3 .main3-txt {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.main3>img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main3 .icons {
+    color: #bbb;
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+
+/* main right */
+.main-right {
+    width: 30%;
+    height: 360px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.main-right .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-right .profile>p {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.main-right>p {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.profile .cate {
+    width: 40px;
+    height: 40px;
+    background: url(../images/cate.png) no-repeat center / cover;
+    border-radius: 100%;
+}
+
+.profile .hem {
+    width: 40px;
+    height: 40px;
+    background: url(../images/hem.png) no-repeat center / cover;
+    border-radius: 100%;
+}
+
+.profile .hea {
+    width: 40px;
+    height: 40px;
+    background: url(../images/hea.jpg) no-repeat center / cover;
+    border-radius: 100%;
+}
+
+.profile .kristen {
+    width: 40px;
+    height: 40px;
+    background: url(../images/kri.jpg) no-repeat center / cover;
+    border-radius: 100%;
+}
+
+.profile .eva {
+    width: 40px;
+    height: 40px;
+    background: url(../images/eva.jpg) no-repeat center / cover;
+    border-radius: 100%;
+}
+
+.profile .dia {
+    width: 40px;
+    height: 40px;
+    background: url(../images/dia.jpg) no-repeat center / cover;
+    border-radius: 100%;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+    font-size: 12px;
+}
