@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <style>
+        .face{
+            transition: all 0.25s;
+            width: 290px; height: 290px; background: url(img/eventimg/face.png) no-repeat; 
+            border-radius: 50%;
+            position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+        }
+    </style>
+      <title>Document</title>
+</head>
+
+<body>
+    <div class="face"></div>
+    <script>
+        const face=document.querySelector('.face');
+        //left값 받아오기  getComputedstyle 매서드로 하기 
+        let leftValue = window.getComputedStyle(face).left; //face의 css에서 계산된 left값을 가져옴 
+        leftValue=parseInt(leftValue);
+        let topValue = window.getComputedStyle(face).top;
+        topValue=parseInt(topValue);
+        console.log(leftValue+topValue);
+        //parseInt()//괄호 안의 값이 정수로 전환 됨 
+
+        window.addEventListener('keydown',(e)=> {
+            if(e.keyCode=='37'){
+                leftValue-=15
+                face.style.left=`${leftValue}px`;
+            }else if(e.keyCode=='39'){
+                leftValue+=15
+                face.style.left=`${leftValue}px`;
+            }
+            else if(e.keyCode=='38'){
+                leftValue-=30
+                face.style.top=`${topValue}px`;
+            }else if(e.keyCode=='40'){
+                leftValue+=30
+                face.style.top=`${topValue}px`;
+            }
+        })
+    </script>
+</body>
+</html>

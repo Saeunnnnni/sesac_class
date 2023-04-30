@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <style>
+        .gnb{width: 800px; margin: auto;}
+        .main-banner{height :550px;background: yellowgreen;}
+        .main-banner h1{font-size: 50px; font-weight: bold; text-align: center;}
+        .depth1{float: left; width: 200px; position: relative;}
+        .depth1>a{display: block; height: 70px; line-height: 70px; text-align: center; font-size: 20px; font-weight: bold;}
+        .depth1:hover>a{color:#d68}
+        .depth1:hover>.depth2{display: block;}
+        .depth2{position: absolute; left:0 ; top:65px; background-color: #fff; border-top:2px solid #059; width: 200px; display:none;}
+        .depth2 a{display: block; height: 50px; line-height: 50px; font-size: 17px; color:#666; text-align: center;}
+        .depth2 a:hover{color:#f42; text-decoration: underline; background-color: rgba(0,0,0,.15);}
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <ul class='gnb cf'>
+            <li class="depth1">
+                <a href='#'>회사소개</a>
+                <ul class="depth2">
+                    <li><a harf='#'>회사개요</a></li>
+                    <li><a harf='#'>ceo인사말</a></li>
+                    <li><a harf='#'>회사연혁</a></li>
+                    <li><a harf='#'>특허인증현황</a></li>
+                    <li><a harf='#'>찾아오시는길</a></li>
+                </ul>
+            </li>
+            <li class="depth1">
+                <a href='#'>제품소개</a>
+                <ul class="depth2">
+                    <li><a harf='#'>신제품</a></li>
+                    <li><a harf='#'>선풍기</a></li>
+                    <li><a harf='#'>여름가전</a></li>
+                    <li><a harf='#'>겨울가전</a></li>
+                    <li><a harf='#'>주방가전</a></li>
+                    <li><a harf='#'>생활가전</a></li>
+                    <li><a harf='#'>환경가전</a></li>
+                </ul>
+            </li>
+            <li class="depth1">
+                <a href='#'>홍보센타</a>
+                <ul class="depth2">
+                    <li><a harf='#'>공지사항</a></li>
+                    <li><a harf='#'>언론보도</a></li>
+                    <li><a harf='#'>카탈로그</a></li>
+                    <li><a harf='#'>홍보활동</a></li>
+                </ul>
+            </li>
+            <li class="depth1">
+                <a href='#'>고객지원</a>
+                <ul class="depth2">
+                    <li><a harf='#'>자주묻는질문</a></li>
+                    <li><a harf='#'>온라인문의</a></li>
+                    <li><a harf='#'>서비스센터</a></li>
+                    <li><a harf='#'>제품설명</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="main-banner">
+        <h1>메인이미지</h1>
+    </div>
+</body>
+</html>

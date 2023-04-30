@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url(css/reset.css);
+        body{background: url(../img/animals/bg.png)}
+        #wrapper{width: 800px;margin: 100px auto;background: #151515;padding: 20px;overflow: hidden}
+        .cover{float: left;background: #f5db87;width: 400px;height: 600px;text-align: center;line-height: 600px}
+        .animal{float: left;width: 400px;height: 600px;}
+        .animal li{float: left;width: 200px;height: 200px;cursor: pointer;text-align: center;line-height: 200px;}
+        .animal li img{width: 100px;height: 100px;transition:all 0.2s}
+        .animal li:hover img{width: 150px;height: 150px;}
+        .animal li img{pointer-events: none;}
+        .a01{background-color: #fed75f}
+        .a02{background-color: #fffbd9}
+        .a03{background-color: #94dec5}
+        .a04{background-color: #a3d8b2}
+        .a05{background-color: #ffeed8}
+        .a06{background-color: #77ada2}
+    </style>
+   
+</head>
+<body>
+<div id="wrapper">
+    <div class="cover">
+        <img src="img/animals/a.png" alt="" id="bigImg">
+    </div>
+    <ul class="animal">
+        <li class="a01"><img src="img/animals/a01.png" alt=""></li>
+        <li class="a02"><img src="img/animals/a02.png" alt=""></li>
+        <li class="a03"><img src="img/animals/a03.png" alt=""></li>
+        <li class="a04"><img src="img/animals/a04.png" alt=""></li>
+        <li class="a05"><img src="img/animals/a05.png" alt=""></li>
+        <li class="a06"><img src="img/animals/a06.png" alt=""></li>
+    </ul>
+</div>
+<script>
+    const animals = document.querySelector('.animal');
+    const animal = document.querySelectorAll('.animal>li');
+    const cover = document.querySelector('.cover');
+    const bigImg = document.querySelector('#bigImg');
+
+    animals.addEventListener('click', e => {
+        const selected = e.target; 
+        selectedTab(selected) //함수호출
+    })
+    //animals.addEventListener('click', function(e){})
+    const selectedTab = (selected) => {
+        let bg = window.getComputedStyle(selected).backgroundColor; //콘솔에찍엇을때 색깔이 나옴
+        console.log(bg)
+        cover.style.backgroundColor=bg;
+        let src = selected.firstChild.getAttribute('src'); //콘솔에 찍었을때 이미지 경로?가 나옴?
+        console.log(src)
+        bigImg.setAttribute('src',src)
+        //firstChild, lastChild, childNodes[0]
+
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+<!-- 
+    css파일에 있는 스타일 값을 가져올때 
+     window.getComptedStyle(대상)스타일속성 
+    
+     도큐맨트오브젝트.style.스타일 속성 => 인라인으로 적용되어 있을때 & 주입을할때 
+     -> kakaotb 에서는 이렇게 사용을 했음 
+
+    -->

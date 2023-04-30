@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0 ; padding : 0;}
+        ul,li{list-style: none;}
+        ul{display: flex;}
+        ul.on{display: none;}
+        li{width: 150px; height: 150px; text-align: center; line-height: 150px; border:2px solid red ; 
+            margin: 10px;cursor: pointer; transition : all 0.2s; ;}
+        li.on{background-color: green; border-radius: 30px;}
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="logo" >쿼리셀렉터</h1>
+    <ul >
+        <li class="list"></li>
+        <li class="list"></li>
+        <li class="list"></li>
+        <li class="list"></li>
+        <li class="list"></li>
+     
+
+    </ul>
+    <script>
+        
+        
+        const list = document.querySelectorAll('.list');
+        
+            list.forEach((li)=>{
+                li.addEventListener('click',()=>{
+                li.classList.toggle('on');
+                
+            })
+            })
+
+
+       
+    </script>
+
+    
+</body>
+</html>

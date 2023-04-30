@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[1,2,3,4,5];
+     /*    const arr1=arr[0];
+        const arr2=arr[1];
+        const arr3=arr[2];
+        const arr4=arr[3];
+        const arr5=arr[4];
+        //원래는 이렇게 하나하나 변수를 줘야 하는데  */
+        const [arr1, arr2, arr3, arr4,arr5] =[1,2,3,4,5] 
+        //이렇게 한번에 주면 위에랑 똑같이 줄 수 있음 변수르르 한번에 배열로 해서 거기에 해당하는 값을 넣어줌 -> 비구조화할당 
+        console.log(arr1)
+        const [num1,num2,num3 = 300]/* 초기값을 주면 언디파인이 안나오고 초기값이 나옴 */=[100,200] //값이 지정안되어있는 값에는 undifined 가 됨
+        console.log(num3)
+
+        var [a,b]=['철수','영희'];
+        [a,b]=[100,200] //const는 재할당이 안됨 
+        console.log(a)
+        
+        let price , item1 , item2;
+
+        price = [item1, item2]=['사과','배','키위','귤']
+        //비구조할당에서는 중첩이 되면 가장 우변의 값이 들어감 
+        //만약에 price = [item1, item2] 이렇게 되어있으면 콘솔에서 언디파인드가 나오고 
+        // price = [item1, item2]=['사과','배','키위','귤'] 이렇게 하면 price를 콘솔에 찍었을때 가장 우변의 값인 ['사과','배','키위','귤']이 나옴
+
+        console.log(item1)
+        console.log(item2)
+        console.log(price)
+
+
+        const [txt1,txt2,...txt3]=['a','b','c','d'] //...이 붙으면 나머지 값이 전부 옴 그래서 c,d값이 나옴  ...은 앞에 넣어줄수 없음[...txt1,txt2] 이건 안됨 p.414
+
+        console.log(txt3)
+
+
+        function arrFnc(name,age){
+            console.log(name)
+            console.log(age)
+
+        }
+        const people = ['shin',20]
+        //arrFn(people[0],people[1])
+
+        arrFnc(['shin',20])
+        //[name,age]=['shin',20]
+
+
+
+
+ 
+    </script>
+</body>
+</html>

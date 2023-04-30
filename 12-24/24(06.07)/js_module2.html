@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  type="module"> 
+
+       // import hello,{a,b} from'./b.js'; //이렇게 연속으로?  두개를 같이? 이중으로? import 할 수 있음 ! 여기서도 근데 같이 부르는 a,b는 변수랑 같은 이름으로 불러야하고 hi는 같지 않아도 hi가 불러져 옴 
+       // console.log(hello) 
+
+        import {a as value} from'./b.js';  //한꺼번에 나왔는데 이름을 바꿔서 불러주고 싶으면 as를 붙여서 바꾸면 된다! 
+
+
+        console.log(value) 
+
+    </script>
+</head>
+<body>
+
+    
+</body>
+</html>

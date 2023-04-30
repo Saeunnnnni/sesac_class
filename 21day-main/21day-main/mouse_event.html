@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box"></div>
+  <script>
+   const box = document.querySelector('#box');
+   const body = document.querySelector('body');
+
+   document.addEventListener('mousemove',(e)=>{
+      console.log(e)
+      let mouseX=e.pageX;
+      let mouseY=e.pageY;
+      box.innerText = `마우스x좌표:${mouseX}+'마우스Y좌표${mouseY}`;
+      const winWidth=window.innerWidth/2;
+      if(mouseX<winWidth){
+        body.style.backgroundColor = '#f33'
+      }else if(mouseX>=winWidth){
+            body.style.backgroundColor = '#059'
+        } 
+   })
+  </script>
+</body>
+</html>

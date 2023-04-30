@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{height: 150vh;}
+    </style>
+</head>
+<body>
+    <div></div>
+    <a href="http://www.daum.net">클릭</a>
+
+    <input type="checkbox"><label for="apple">사과</label>
+    <script>
+        const link = document.querySelector('#link')
+        const check = document.querySelector('#apple')
+
+        check.addEventListener('click', e=>{
+            console.log('체킹 애플')
+         /*    e.preventDefault(); */
+        }) //체크가 되는 기본함수가 이미 디폴트값 그래서 그거를 방지? 하는게 prevenetDefault
+        link.addEventListener('click', e=>{
+            console.log('체킹 링크')
+        })//링크의 디폴트값 : 어떤 함수를 실행시켜도 반드시 자기의 기본값을 실행시킴 
+            
+    </script>
+
+</body>
+</html>

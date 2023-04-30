@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(css/reset.css);
+        .wrap{height: 150vh;}
+        .box1{height: 700px; background-color: #596;}
+        .box1 ul{display: flex; background-color: #fff; position: sticky; top:20px;}
+        .box1 ul li{width: 100px; height: 80px; text-align: center; line-height: 80px;}
+        .box2{height: 900px; background-color: rgb(227, 250, 73);}
+       /*  <!-- 부모박스안에서만 상단 10px에만 고정이 되고 부모의 높이를 넘어가면 위로 올라감  -->  */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">         
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+            </ul>
+        </div>
+        <div class="box2">
+
+        </div>
+    </div>
+</body>
+</html>

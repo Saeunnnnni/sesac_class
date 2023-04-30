@@ -1,0 +1,57 @@
+.mainContainer{
+    --list-size:1200px;     
+    height: auto;
+    margin:50px auto;
+}
+.mainContainer .slideBtn{
+    border-bottom: 1px solid #777;
+    width: var(var(--list-size));
+    margin: auto;
+}
+.mainContainer .slideBtn button{
+    padding: 0.5rem 1rem;
+    background-color: rgb(107, 1168, 21);
+    margin: 0 1rem;
+    color: #fff
+}
+.mainContainer .viewContents{
+    margin:auto;
+    width: var(--list-size);
+   height: 500px;
+    border:1px solid#999;
+    overflow: hidden;
+    ;
+}
+.mainContainer .viewContents ul{
+    width: 500%; height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+}
+.mainContainer .viewContents li{
+    flex-shrink: 0;
+    width: var(--list-size);
+    height: 500px;
+    font-size: 4rem;
+    text-align: center;
+    padding: 50px;
+    display: none;
+}
+.mainContainer .viewContents li.on{display: block; color:rgb(232, 83, 83);}
+.mainContainer .view_01{background-color: rgb(236, 107, 16);}
+.mainContainer .view_02{background-color: rgb(204, 204, 17);}
+.mainContainer .view_03{background-color: rgb(12, 236, 64);}
+.mainContainer .view_04{background-color: rgb(20, 231, 217);}
+.mainContainer .view_05{background-color: rgb(231, 20, 175);}
+
+@keyframes firstSlide{
+    0%{margin-left: 100%; transition: none} /* 0일떄 */
+    100%{margin-left: 0%; transition: margin 500ms ease}/* 100일떄 */
+}
+
+@keyframes lastSlide{
+    0%{margin-left: 100%; transition: margin 500ms ease}
+    100%{margin-left: 0%; }
+}
+

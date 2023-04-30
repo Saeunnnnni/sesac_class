@@ -1,0 +1,10 @@
+*{margin:0;padding: 0;}
+ul.li.ol{ list-style: none;}
+
+.fun-logo {width: 1000px; margin: auto;}
+.funn-box.on{
+  display: block;
+}
+.fun-box.off{
+  display: none;
+}

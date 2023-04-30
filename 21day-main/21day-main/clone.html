@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+     @import url(css/reset.css);
+        html,body{height: 100%; background: url(img/gallery/08.jpg) no-repeat  center;background-size: cover}
+        .gnb{position: fixed;left:100px;top:100px;z-index: 100}
+        .gnb li{height: 60px;/* border:5px solid green; */overflow: hidden}
+        .gnb li a{display: block;height: 60px;line-height: 60px;font-size: 40px;font-weight: bold;font-family: 'arial';color:#fff;opacity:.6;position: relative;transition:top .3s;}
+    </style>
+ 
+</head>
+<body>
+    <ul class="gnb">
+        <li>
+            <a href="#">Menu1</a>
+        </li>
+        <li>
+            <a href="#">Menu2</a>
+        </li>
+        <li>
+            <a href="#">Menu3</a>
+        </li>
+        <li>
+            <a href="#">Menu4</a>
+        </li>
+    </ul>
+    <script>
+       const lists = document.querySelector('.gnb')
+       const list = document.querySelectorAll('.gnb li')
+   
+        list.forEach((ele)=>{
+            let newA = ele.children[0].cloneNode(true); 
+            console.log(newA)
+            newA.style.opacity = '1';
+            ele.appendChild(newA)
+            //cloneNode()
+           // console.log(ele.childNodes)
+            //console.log(ele.children)
+        })
+
+        list.forEach((ele)=>{
+            let childA = ele.children  ; 
+            console.log(childA)
+            console.log(childA.length)
+            //over
+            ele.addEventListener('mouseover',()=>{
+                for(let i=0;i<childA.length;i++){
+                    childA[i].style.top='-60px';
+                }
+            })
+            //out
+            ele.addEventListener('mouseout',()=>{
+                for(let i=0;i<childA.length;i++){
+                    childA[i].style.top='0px';
+                }
+            })
+            
+        })
+     </script>
+</body>
+</html>

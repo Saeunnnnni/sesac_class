@@ -1,0 +1,33 @@
+.TodoItem{
+    height: 30px;
+    line-height: 33px;
+    padding: 8px 0px;
+    border-bottom: 1px solid #efe8c8;
+    text-indent: 80px;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+.TodoItem:hover{
+    border-bottom: 2px dashed #ff0000;
+
+}
+.TodoItem.active{
+    background-color: #e8c114;
+    font-weight: 500 ;
+    color: black;
+}
+.TodoItem__deletedBtn{
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    color:#ffd4f7;
+    text-indent: 0;
+    text-align: center;
+    font-size: 0.725rem;
+    position: absolute;
+    right : 1rem ; background: none;
+    color: #ff0000;
+
+}

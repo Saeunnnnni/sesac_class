@@ -1,0 +1,64 @@
+.movie-list{
+    width: 100vh;
+    height: 100vh; 
+   
+
+}
+
+
+
+.imgbox{
+    
+    width: 200px;
+    height: 100px;  
+    float: left;  
+    position: relative;
+    display: flex;
+    align-content: center;
+
+
+}
+.dimmed a{
+    
+    border: 1px solid #fff;
+    font-size: 11px;
+    color:#fff;   
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+}
+
+.gradeinfo{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    position: absolute;
+}
+.gradeinfo.on12{background-color: rgb(135, 212, 243);}
+.gradeinfo.onall{background-color: rgb(15, 231, 79);}
+.gradeinfo.on15{background-color: rgb(227, 195, 48);}
+
+.txtbox .title{
+    color: black;
+    font-size:15px;
+    align-items: center;
+    
+}
+.txtbox .info{  color: black;
+    font-size: 11px;
+    align-items: center; 
+      
+
+}
+.txtbox .rateinfo{
+    color: black;
+    font-size: 11px;
+    align-items: center; 
+  
+}

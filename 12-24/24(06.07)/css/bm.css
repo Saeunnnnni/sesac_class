@@ -1,0 +1,41 @@
+
+
+header{
+    width: 100%; margin: 0; padding:0; background-color: blueviolet;
+}
+
+
+.main .deliveryman{
+    width:200px; height: 200px; margin-right: 0; float: right;
+}
+
+#main{width: 100%; 
+    height: auto;
+
+
+}
+header .logo{
+    display: flex;
+    width: 50px;
+    height: 35px;
+    margin-left: 40px;
+
+}
+header .navi-bar-sns li{
+    float: left;
+    width: 34px;
+    align-items: center;
+    display: block;
+    margin-right : auto;
+    cursor: pointer;
+
+}
+.section{
+    width: 100%;
+    background-color: rgb(17, 233, 225);
+}
+
+.section_s1.s1_img{
+    width: 200px;
+    height: 200px;
+}

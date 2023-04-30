@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{border:5px solid #333; padding:5px; background-color: #ff5;
+            display: grid;
+           /*  grid-template-columns: repeat(3,1fr); */
+           /* grid-template-columns: 1fr minmax(200px,auto) 1fr */
+        /*min값이 200 max 값이 auto 최대값과 최소값을 지정해줄수 있음 */ 
+            /* grid-template-columns: min-content 1fr 1fr; */
+            /*안에 들어가 있는 그림이나 글자 싸이즈에 크기를 맞춤*/
+            grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+            /* auto-fill auto-fit */
+        }
+        .wrap>div{
+            background-color: #d41;           
+            padding : 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div><img src=img/client-01.jpg></div>
+        <div>2</div>
+        <div>3</div>
+        <div><img src=img/client-01.jpg></div>
+        <div>5</div>
+        <div>6</div>
+
+    </div>
+</body>
+</html>

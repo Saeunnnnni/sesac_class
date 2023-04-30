@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url(css/reset.css);
+        #outer{width: 400px;height: 400px;background: #f00;position: relative;margin: 100px auto;}
+        #inner{width: 200px;height: 200px;background: #000;position: absolute;top:50px;left:100px}
+        
+    </style>
+  
+</head>
+<body>
+    <div style='height:1500px'></div>
+    <div id="outer">
+        <div id="inner"></div>
+    </div> 
+    <script>
+         const inner=document.querySelector('#inner');
+         const outer=document.querySelector('#outer');
+         const posTop=inner.getBoundingClientRect().top;
+         const posLeft=inner.getBoundingClientRect().left;
+         const offsetTop=inner.offsetTop; //css 포지션 정책대로 top,left 위치 값 받아온다.
+         const offsetLeft=inner.offsetLeft;
+
+         console.log(posTop)
+         console.log(posLeft)
+         console.log(offsetTop)
+         console.log(offsetLeft)
+
+         console.log(window.pageYOffset);
+         console.log(window.scrollY);
+         console.log(window.scrollY+ posTop);
+
+         //window.scro/lY+ elementBoundingClinetReact().top;
+         //window.pageYOffset+ elementBoundingClinetReact().top;
+         //해당 엘리먼트의 절대 좌표 구하기
+
+         function getPosTop(ele){
+             return window.scrollY + elementBoundingClinetReact().top;
+         }
+
+         const posCalc1 = getPosTop(inner)
+         const posCalc2 = getPosTop(outer)
+
+         console.log(posCalc1)
+         console.log(posCalc2)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+

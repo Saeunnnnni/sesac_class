@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap>#btn{color:red;width: 100px; height: 100px; background-color: #000;}
+        .wrap>#btn.on{color: white;}
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1 id="logo">타이틀 </h1>
+        <ul class="listbox">
+            <li class="list">리스트1</li>
+            <li class="list">리스트2</li>
+            <li class="list">리스트3</li>
+        </ul>
+        <button id="btn">버튼</button>
+    </div>
+    <script>
+       const title= document.querySelector('#logo');
+       const lis= document.querySelectorAll('.list'); //[.list,.list,.list]
+       title.style.color='#f00';
+       //lis.style.backgroundColor='#396';
+
+       for(i=0;i<lis.length;i++){
+           lis[i].style.backgroundColor='#396';
+       } //이렇게 하면 다 색칠 할 수 있음 
+
+       const btn=document.querySelector('#btn');
+       btn.classList.add('on')
+      
+      // forEach(대상데이터,인덱스,배열)
+       lis.forEach(li => {
+           li.style.backgroundColor='red';
+       })
+
+    </script>
+
+</body>
+</html>

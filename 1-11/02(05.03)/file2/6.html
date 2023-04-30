@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width:450px; height:300px; margin:20px; padding:30px; border:5px; dotted: red}
+        .box1{background-color: green;
+        background-clip: content-box;}
+        .box2{background-image: url(image/card1.jpg);
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+        .box3{background-image: url(image/nut_img1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100px auto;
+        background-position: right 10px bottom 10px;
+    }
+        .box4{
+            background-image: url(image/Maggie.png);
+            background-repeat: no-repeat;
+            background-size: cover; }
+        body{background-attachment: scroll;}
+
+    </style>
+</head>
+<body>
+    <div class="box1 box"><h1>박스1</h1></div>
+    <div class="box2 box"><h1>박스2</h1></div>
+    <div class="box3 box"><h1>박스3</h1></div>
+    <div class="box4 box"><h1>박스4</h1></div>
+</body>
+</html>

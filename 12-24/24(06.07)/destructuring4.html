@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = {
+            shape:{width :150,height : 100, weight : 50,},
+            color:['red','green','yellow']
+        }
+        console.log(product.shape.width)
+
+        let {shape :{width,height,weight} ,color:[topColor,bottomColor,sideColor]}=product
+        //키와 변수명이 같으면 생략 가능해서 이렇게 축약함 
+
+
+        console.log(width)
+        console.log(height)
+        console.log(weight)
+        console.log(topColor)
+        console.log(bottomColor)
+        console.log(sideColor)
+
+        
+    </script>
+
+    
+</body>
+</html>

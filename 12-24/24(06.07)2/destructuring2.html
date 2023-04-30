@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /*    const{name:a ,age:b} = {name:'lee',age:30} */
+        const{name,age} = {name:'lee',age:30} // //키와 변수명이 같으면 생략 가능해서 이렇게 축약
+        console.log(age)
+        console.log(name)
+
+    
+        const address ='seoul';
+        const telNum =010;
+        const gender = 'male';
+
+        const user={
+            address : address,
+            telNum:telNum,
+            gender:gender
+        } //user를 축약한게 user1 ! 축약해서 많이 쓰니까 잘 알아둬야 행  
+        const user1={address,telNum, gender}
+
+        console.log(user)
+        console.log(user1)
+
+        const {a:x=0,b:y=0,c:z=0} = {a:1 , b :2, c:3} //키를 만들고 밸류를 안만들면 안됨 근데 
+ /*        const {a:x=0,b:y=0,c:z=0} = {a:1 , b :2, c} */
+
+        console.log(x)
+        console.log(y)
+        console.log(z)
+
+        function objFnc (name,age){
+            console.log(name)
+            console.log(age)
+        }
+
+        const obj = { name: 'won' , age : 10}
+
+        //obj(obj.name ,  obj.age)
+        objFnc(obj)
+
+     /*    {name:name, age:age} = {name : 'won' , age : 10 } */
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.chat2-header{background-color: rgb(85, 161, 233);}
+.chat2-header-top,.chat2-header-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat2-header .chat2-header-column{ width:30%; }
+.chat2-header .chat2-header-column:nth-child(2){text-align: center;}
+.chat2-header .chat2-header-column:last-child{text-align: right;}
+
+.chat2-header .chat2-header-top{font-size: 12px; margin-bottom: 15px;}
+.chat2-header .chat2-header-bottom{margin: 0 10px;}
+.chat2-header .chat2-header-bottom .header-column:first-child{
+    color:rgba(255,255,255,0.5); cursor:pointer
+}
+.chat2header .chat2-header-number{color:#ffe94a}

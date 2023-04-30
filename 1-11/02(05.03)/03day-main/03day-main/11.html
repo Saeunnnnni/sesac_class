@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0}
+        #wrapper{background: #ccc}
+        #header,#footer{height: 100px;background: #f36;}
+        #mainvisual{height: 500px;background: #f96}
+        #contents{background: #ccc;height: 620px;padding: 20px 0;}
+        .inner{width: 960px;margin:auto;}
+        .inner>div{float: left;}
+        .box1{width: 307px;height: 400px;background: #333;}
+        .box2{width: 306px;height: 400px;background: #666;margin:0 20px;}
+        .box3{width: 307px;height: 400px;background: #333;}
+        .box4{width: 470px;height: 200px;margin-top: 20px;margin-right:20px;background: #999;}
+        .box5{width: 470px;height: 200px;margin-top: 20px;background: #404040;}
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header"></div>
+    <div id="mainvisual"></div>
+    <div id="contents"> <!--컨텐츠 시작-->
+        <div class="inner"><!--s:960-->
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+        </div><!--e:960-->
+    </div><!--컨텐츠 종료-->
+    <div id="footer"></div>
+</div>    
+</body>
+</html>

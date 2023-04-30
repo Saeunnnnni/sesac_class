@@ -1,0 +1,12 @@
+.chats-box { 
+   
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding : 10px 15px;
+   
+}
+.chats-box .chats-list .friends-image-column{
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 15px;
+}

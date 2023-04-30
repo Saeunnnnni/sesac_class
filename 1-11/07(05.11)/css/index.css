@@ -1,0 +1,68 @@
+/* 메인 */
+.mainbanner{height: 653px; background: url(../img/main/mainbanner1.png) no-repeat center/ cover;text-indent: -9999px; font-size: 0;}
+
+/* 스토어 */
+.store{height: 655px;background-color: #f8f6e5; position: relative;}
+.store .right-bg{position: absolute ; left: 50%; top:0; height: 655px; width: 50%; background-color: #d6ecee;}
+.store .inner{z-index: 1000;position: relative;}
+.store .store-left{width: 50%; height: 655px; float: left; padding-top: 128px; padding-left: 37px; box-sizing: border-box;}
+.store .store-left  h3{font-family: 'Philsopher',serif;margin-bottom: 40px;}
+.store .store-left p:nth-of-type(1){font-size:38px; color:#333; font-weight: 700; margin-bottom: 30px;}
+.store .store-left p:nth-of-type(2){font-size:18px; color:#666; line-height:30px}
+.store .store-left p:nth-of-type(3){font-size:21px; color:#666; line-height:36px; margin-top: 54px;}
+.store .store-left .new-store-more{display: block; width: 220px; height: 60px; color: #fff; font-size: 14px; line-height: 60px; text-align: center; background-color: #465a4f; margin-left: 146px;margin-top: 79px;}
+.store .store-right{width: 50%; height: 655px; float: left;padding-left: 58px;padding-top: 69px;  box-sizing: border-box;}
+.store .store-right .slide-control{margin-top: 46px;margin-left: 15px;}
+.store .store-right .slide-control button{float: left; text-indent:-9999px; font-size:0;width: 49px; height: 15px;}
+.store .store-right .slide-prev-btn{background: url(../img/main/prev-arrow.png) no-repeat; margin-right: 44px;}
+.store .store-right .slide-next-btn{background: url(../img/main/next-arrow.png) no-repeat; }
+
+.product-new{height: 655px;background-color: #fff;}
+.product-new .new-item{
+    width:166px;
+     height: 26px; 
+     left: 50%;  
+     transform: translateX(-50%); 
+     font-family: philosopher;
+     font-size: 40px; 
+     text-align: center;
+      color:#464646;}
+.product-new .new-list .thum_view{float: left; width: 229px;
+    height: 229px;margin: 55px 22px 17px 21px;
+    padding: 43px 26px 43px 28px; background-color: #f5f4e8;}
+
+.product-best{height: 672px;background-color: #465a4f;}
+.product-best .best-item{width: 333px;
+    height: 34px;
+    margin: 0 154px 59px 155px;
+    font-family: Philosopher;
+    font-size: 40px;
+    text-align: center;
+    color: #fffffa;}
+.product-best .best-item-list .best-item-product{float:left;width: 280px; height: 280px;}
+
+.product-different{
+   
+    height: 672px;
+    margin: 92px 0 79px;
+    padding: 109px 359px 95px;
+    background-color: #fffffa;
+    
+}
+.product-different .best-item{
+    width: 403px;
+  height: 24px;
+  margin: 79px 15px 62px 28px;
+  font-family: Philosopher;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #464646;
+}
+
+.product-different .different-make .what-make{float:left;width: 280px; height: 280px;}
+
+
+
+

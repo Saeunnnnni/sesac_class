@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/mario/icon03.png" alt="마리오" id="img" class="imgbox" date-num="0" data-name="img1">
+    <script>
+        const img =document.querySelector('#img')
+        const src=img.getAttribute('src')
+        const altTxt=img.setAttribute('alt','버섯짱구')
+        //이거두개는 진짜 많이 사용하는거니까 꼭 알고 있기!
+        console.log(src)
+        console.log(altTxt)
+        const imgbox=img.className
+        //클래스 이름 사용하기 
+        const databox=img.getAttribute('data-num')
+        //data 사용하기 
+
+        console.log(img.dataest.num)
+        console.log(img.dataest.name)
+    </script>
+</body>
+</html>

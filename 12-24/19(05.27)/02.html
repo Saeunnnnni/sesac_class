@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outerbox{
+            width: 400px; height: 400px; 
+            background-color: rgb(255, 0, 204);
+            display: flex; align-items: center; justify-content: center; margin: 50px auto;
+        }
+        .middlebox{
+            width: 300px; height: 300px; 
+            background-color: rgb(223, 91, 140);
+            display: flex; align-items: center;
+        }
+        .innerbox{
+            width: 200px; height: 200px;
+             background-color: rgb(44, 109, 166);
+        }
+    </style>
+</head>
+<body>
+    <div class="outerbox">
+        <div class="middlebox">
+            <div class="innerbox">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        const outerbox =document.querySelector('.outerbox')
+        const middlebox =document.querySelector('.middlebox')
+        const innerbox =document.querySelector('.innerbox')
+
+        outerbox.addEventListener('click',(e)=>{
+            if(e.target !== e.currentTarget){
+                return;
+            }
+            console.log('outerbox')
+           /*  console.log('outerbox')
+            console.log(e.currentTarget) //핸들러가 연결되어있는 대상을 불러옴  핸들러가 연결된 element
+            console.log(e.target) //내가 클릭한 곳을 불러옴 현재 이벤트가 발생한 위치에 있는 element  */
+           /*  e.stopPropagation() */
+        })
+        middlebox.addEventListener('click',(e)=>{
+            if(e.target !== e.currentTarget){
+                return;
+            }
+            
+            console.log('middlebox')
+        })
+        innerbox.addEventListener('click',(e)=>{
+            if(e.target !== e.currentTarget){
+                return;
+            }
+           
+            console.log('innerbox')
+        })
+
+        //이벤트 전파 방식
+        //위쪽으로 올라가면서 전파되는 방식 false(기본)
+        //캡처링 아래로 내려가면서 전파되는 방식 true
+        //기본이 버블링, 
+        //stopPropagation() 이벤트 전파 취소 
+
+    </script>
+</body>
+</html>

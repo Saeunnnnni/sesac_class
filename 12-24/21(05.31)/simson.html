@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/simson.css" rel="stylesheet">
+    <style>
+        .type-b img{transition:  top 1.5s;}
+        .type-c img{transition:  top 3s;}
+
+    </style>
+
+  
+</head>
+<body>
+<div id="wrapper">
+    <ul class="gallery side-a"><!--왼쪽-->
+        <li class="type-b"><img src="img/simson/tb-01.png" alt=""></li>
+        <li class="type-a"><img src="img/simson/ta-01.png" alt=""></li>
+        <li class="type-b"><img src="img/simson/tb-03.png" alt=""></li>
+        <li class="type-b"><img src="img/simson/tb-04.png" alt=""></li>
+        <li class="type-c">Homor<div class="inner"><img src="img/simson/hero-01.png" alt="호모심슨"></div></li>
+        <li class="type-b"><img src="img/simson/tb-05.png" alt=""></li>
+        <li class="type-a"><img src="img/simson/ta-02.png" alt=""></li>
+        <li class="type-a"><img src="img/simson/ta-03.png" alt=""></li>
+        <li class="type-c">Bart<div class="inner"><img src="img/simson/hero-02.png" alt="바트"></div></li>
+        <li class="type-b"><img src="img/simson/tb-02.png" alt=""></li>
+    </ul> 
+    <ul class="gallery side-b"><!--오른쪽-->
+        <li class="type-a"><img src="img/simson/ta-04.png" alt=""></li>
+        <li class="type-b"><img src="img/simson/tb-06.png" alt=""></li>
+        <li class="type-b"><img src="img/simson/tb-07.png" alt=""></li>
+        <li class="type-a"><img src="img/simson/ta-05.png" alt=""></li>
+        <li class="type-a"><img src="img/simson/ta-06.png" alt=""></li>
+        <li class="type-c">Marge<div class="inner"><img src="img/simson/hero-03.png" alt="마지"></div></li>
+        <li class="type-a"><img src="img/simson/ta-07.png" alt=""></li>
+        <li class="type-b"><img src="img/simson/tb-08.png" alt=""></li>
+        <li class="type-a"><img src="img/simson/ta-08.png" alt=""></li>
+        <li class="type-b"><img src="img/simson/tb-09.png" alt=""></li>
+    </ul>
+</div>
+<script>
+    const typeA =document.querySelectorAll('.type-a');
+    const typeB =document.querySelectorAll('.type-b');
+    const typeC =document.querySelectorAll('.type-c');
+    
+    //타입 A 
+    typeA.forEach((ele)=>{
+        ele.addEventListener('mouseover',function(e){
+            this.style.borderRadius='20%'; //그냥 function이벤트 함수에서 this로 해도 e.targer이랑 같음 근데 화살표함수에서는 this사용 안됨 
+            this.style.borderwidth='3px';
+        })
+        ele.addEventListener('mouseout',function(e){
+            e.target.style.borderRadius='50%';
+            e.target.style.borderwidth='5px';
+        })
+    })
+
+    // 타입 b over시 자식 img top:0 , out시 top : -30px
+    typeB.forEach(function(li){
+        li.addEventListener('mouseover',function(e){
+            e.target.children[0].style.top='-30px';  
+            
+        })
+        li.addEventListener('mouseout',function(e){
+            e.target.children[0].style.top='0px'; 
+        })
+    })
+    // 타입 c over시 자식 .inner top: -200px , out시 top : 0px
+    typeC.forEach(function(li){
+        li.addEventListener('mouseenter',function(e){
+            e.target.children[0].style.top='-200px'; 
+           
+            
+        })
+        li.addEventListener('mouseleave',function(e){
+            e.target.children[0].style.top='0px'; 
+        })
+    })
+   //여러요소들이 겹겹히 쌓여 있고 공백이 있을 경우 out과 over로 하면 계속 겹치면서 떨리니까 
+   //공백들이 있을 경우에는 enter와 leave로 잡아주면 됨 
+
+
+
+</script>
+</body>
+</html>
+
+

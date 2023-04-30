@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{border: 2px solid green;}
+        .list{color:red}
+    </style>
+</head>
+<body>
+    <h1>테스트1</h1>
+    <div class='box'></div>
+    <script src="https://jsonplaceholder.typicode.com/todos/1"></script>
+    <script>
+        const box = document.querySelector('.box');
+
+       /*  fetch('./list.html') */
+       axious('https://jsonplaceholder.typicode.com/todos/1')
+        .then( (Response)=>{
+            return Response.text();
+        })
+        .then((data)=>{
+            const list = document.createElement('div');
+            list.setAttribute('class','list');
+            list.innerHTML = data;
+            box.append(list)
+        }).catch((error)=>{
+            console.log(error)
+        })
+    </script>
+
+</body>
+</html>

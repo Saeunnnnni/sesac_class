@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj ={
+            name : '철수',
+            adress : '서울',
+            hobby :{
+                a:'game',
+                b:'music',
+
+            },
+        }
+        
+
+        const newObj = JSON.parse(JSON.stringify(obj));
+        newObj.hobby.a='book';
+        
+        console.log(newObj) //전체가 문자열로 바뀜
+        console.log(obj)
+        
+        
+    </script>
+    <!-- JSON.stringify //문자로 바꾸는 매서드
+    JSON.parse //문자열의 구문을 분석해서 다시 문자를 객체(object)로 다시 바꾸는 매서드 
+
+ //문자로 바꾸고 그거를 다시 객체로 바꿔서 딥카피를 한다  
+obj를 딥카피를 하고 싶어서 방법이 없어서 제이슨으로 문자열로 바꿔서 다시 오브젝트로 바꾸는 ! 처음부터 제이슨 파스로 오브젝트를 만들 수 는 없음
+카피 할때 제이슨을 많이 사용 근데 많은 양을 할때는 잘 안쓰고 ! 오브젝트 안에 함수가 있으면 카피가 안됨 ! 함수, 매서드는 언디파인드 되어버림 그냥 자료형 오브젝트들을 카피할때 사용  -->
+</body>
+</html>

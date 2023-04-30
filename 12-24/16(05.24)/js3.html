@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(a,b){
+            this.name=a;
+            this.age=b;
+        }
+        Student.prototype.address='korea'; //공통적으로 가질 값을 부모의 원형의 프로토에 값을 준다 
+        var Student1=new Student('Lee',20);
+        var Student2=new Student('Kim',30);
+
+        console.log(Student1.address)
+        console.log(Student.prototype)
+        //1. 내가 adress값을  가지고 있는지 검사 
+        //2. 부모의 원형 prototype을 검사 
+        //3. 부모의 부모의 원형을 prototype을 검사....
+
+
+    </script>
+</body>
+</html>

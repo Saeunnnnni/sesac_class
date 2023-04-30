@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 300px;height:300px;background-color: red;
+        margin: 20px;}
+        .box1{
+            animation-name: ani1;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            /* 포지션값을 안 정해주면 적용이 안되니까 꼭  포지션값을 정해주기!  */
+          
+        }
+        .box2{
+            animation: ani1 5s 3 alternate;
+            position: relative;
+            animation-fill-mode: forwards;
+        }
+        .box3
+            {
+                background:url(images/wallpaper.jpg)no-repeat center/
+                cover;
+                animation: ami2 3.5s linear 3 alternate forwards;
+                
+            }
+        
+
+        @keyframes ani1 {
+            0%{
+                background-color: red;
+                left: 0;
+
+            }
+            
+            100%{
+                left: 600px;
+            }
+        
+            
+        }
+        @keyframes ani2 {
+            0%{background-image: url(images/wallpaper.jpg);}
+            50%{background-image: url(images/kakaofriends.png);}
+            100%{background-image: url(images/kakaostory.png);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">박스1</div>
+    <div class="box box2">박스2</div>
+    <div class="box box3">박스3</div>
+    <div class="box box4">박스4</div>
+    <div class="box box5">박스5</div>
+</body>
+</html>

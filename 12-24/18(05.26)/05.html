@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:5px solid #000;
+            background-color: blanchedalmond;
+            height: 800px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            align-content: space-between;
+            
+        }
+        .item{background-color: #e69;
+            width: 150px; height: 150px;
+            border:1px solid #000;
+            font-size: 30px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+        }
+        .item>div{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(29,92,163);
+            color:#fff; text-align: center;line-height: 100px;;
+        }
+        .item2 div{
+            justify-self: start;
+            align-self: start;
+        }
+        .item9 div{
+            justify-self:stretch;
+            align-self: stretch;
+            width: auto;
+            height: auto;
+        
+           /*  stretch 줘도 width, height 값이 있으면 stretch가 안먹으니까 auto로 풀어줘야함 근데 전체 풀면 안되니까 개별적으로  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="item item1">
+            <div>1</div>
+        </div>
+        <div class="item item2">
+            <div>2</div>
+        </div>
+        <div class="item item3">
+            <div>3</div>
+        </div>
+        <div class="item item4">
+            <div>4</div>
+        </div>
+        <div class="item item5">
+            <div>5</div>
+        </div>
+        <div class="item item6">
+            <div>6</div>
+        </div>
+        <div class="item item7">
+            <div>7</div>
+        </div>
+        <div class="item item8">
+            <div>8</div>
+        </div>
+        <div class="item item9">
+            <div>9</div>
+        </div>
+    </div>
+    
+</body>
+</html>

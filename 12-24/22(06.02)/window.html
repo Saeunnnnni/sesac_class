@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            console.log('돔의 컨텐츠가 다 읽어 진 후 ')
+        })
+        document.addEventListener('DOMContentLoaded',()=>{
+            console.log('돔의 컨텐츠가 다 읽어 진 후 ')
+        })
+        window.addEventListener('load',()=>{
+            console.log('모든 리소스가 다 읽어 진 후 ')
+        }) 
+     
+    
+
+    </script>
+</body>
+</html>
+
+
+									
+<!-- 윈도우라는 객체는 브라우저를 먼저 실행했을때 가장 먼저 실행되는 객체									
+어떤 창을 의미 하지는 않지만 자바스크립트의 전역객체의 의미이지만 스크립트가 실행되고 있는 창이라고 생각 할 수 있음									
+최상위에 잇는 전역 객체.									
+ -->									
+<!-- 도큐멘트에 적용할수 있는 이벤트는 나누어져있지만, 윈도우 객체에 줘야하지만 도큐에 사용을 해도 버블링이나 캡처링이 같이 적용 , 그래서 어떤때는 윈도우에 해도 되고 어떤때는 도큐에 줘도됨 !  -->									
+<!-- 									
+ul에 줘도 li가 적용되는 거처럼 									
+상위에 줘도 하위에도 적용되는 느낌이라고 생각하면 됨 ! 			 -->		
+
+<!-- 스크립트를 헤드와 헤드사이에 연결을 하면 오류가 남 . 헤드와 헤드 사이에 달아서 읽혀지게 하려고 하면 1.스크립트 src하고 스크립트 내용 뒤에 달거나 바디 밑에 넣기 2.document.addEventListener('DOMContentLoaded' 매서드 사용  3. src뒤에 defer 찍기  스크립트 src연결 될떄 불러올때 쓰는 거 
+    defer = DOMContentLoaded --> 
+									
+<!-- 

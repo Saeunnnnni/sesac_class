@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .face{transition:all 0.25s;width: 290px;height: 290px;background: url(img/eventimg/face.png) no-repeat;border-radius: 50%;position: absolute;left:50%;top:50%;margin-left: -145px;margin-top: -145px}
+  </style>
+</head>
+<body>
+  <div class="face"></div>   
+  <script>
+      const face = document.querySelector('.face')
+      let leftValue=window.getComputedStyle(face).left;
+      leftValue=parseInt(leftValue)
+      let topValue=window.getComputedStyle(face).top;
+      topValue=parseInt(topValue)
+     window.addEventListener('keydown',(e)=>{
+        if(e.keyCode=='37'){
+            leftValue-=30
+            face.style.left=`${leftValue}px`;
+          }else if(e.keyCode=='39'){
+            leftValue+=30
+            face.style.left=`${leftValue}px`;
+          }else if(e.keyCode=='38'){
+            topValue-=30
+            face.style.top=`${topValue}px`;
+          }else if(e.keyCode=='40'){
+            topValue+=30
+            face.style.top=`${topValue}px`;
+          }
+     })
+         
+         
+  </script>
+</body>
+</html>

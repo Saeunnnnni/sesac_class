@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{display: none;}
+    </style>
+</head>
+<body>
+    <h1>
+        <span>2022-05-30</span>
+        타이틀       태그
+    </h1>
+    <script>
+        const h1=document.querySelector('h1')
+        const innerH = h1. innerHTML //html 그대로 읽어온다.
+        const innerT = h1.innerText //공백제거, 텍스트만 불러온다. style에서 적용된 값을 읽어온다.
+        const textC = h1.textContent//공백 읽어오고, style 적용안됨, html 요소만 없앤다.
+        console.log(innerH)
+        console.log(innerT)
+        console.log(textC)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+    .header-top{
+        height: 40px; width: 100%; 
+        background-color: rgb(78, 157, 226);color:#fff;
+        font-size: 30px; text-align: center;} 
+
+    .menu {
+        height: 40px; width: 100%; background-color: blue; color: black; font-size: 10px; text-align: left; margin-top: 5px; margin-bottom: 10px;
+        padding-left: 50px;
+         }
+
+    .menu .menubtn{
+        height: 40px;
+        float: left; font-size: 15px;  
+        padding: 10px;
+        text-align: center;
+        background-color: blue;
+        border : none;
+        float: left;
+        
+        }
+    .main .left{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .left .wrapper{
+        width: 400px; height: 150px; 
+        background-color: rgb(201, 218, 8); margin-top: 10px;}
+
+    .right .content{
+        float: left; 
+        border-bottom: 1px solid rgb(149, 15, 15);}
+    .main .right{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main .right .title{
+        font-size: 30px; margin: auto; margin-left: 20px;}
+
+    .main .right .contents{
+        margin: auto; margin-left: 20px;}
+
+    .main .right .content {
+        margin:0}
+
+    .main .right .content .title{
+        font-size: 20px;}
+
+    .main .right.content .contents{
+        align-content: flex-end}

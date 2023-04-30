@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(css/reset.css);
+        .tab_area{width: 80%; margin: auto;}
+        .tab_title{height: 40px;}
+        .tab_list_box{display: flex;}
+        .tab_list{width: 20%; height: 40px; text-align: center; line-height: 40px;}
+        .tab_list.tab_active{background-color: #eee;}
+        .tab_content_container{position: relative;}
+        .tab_content{
+            width: 100%;
+            position: absolute;
+            left: 0; top:0;
+            box-sizing: border-box;
+            background-color: #eee;
+            padding: 50px;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="tab_area">
+        <div class="tab_title">
+            <ul class="tab_list_box">
+                    <li class="tab_list tab_active" data-tabnum="0">타이틀1</li>
+                    <li class="tab_list" data-tabnum="1">타이틀2</li>
+                    <li class="tab_list" data-tabnum="2">타이틀3</li>
+            </ul>
+        </div>
+        <div class="tab_content_container">
+            <div class="tab_content">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis vitae debitis nisi ullam nesciunt temporibus exercitationem, quis esse nihil in mollitia aperiam omnis, culpa repellat officia suscipit eos? Ea officia atque, velit molestias, non nobis cumque quibusdam tenetur dicta repellendus esse excepturi quam tempore explicabo totam ex reiciendis. Dolorum, esse.
+
+            </div>
+            <div class="tab_content">
+            Nobis vitae debitis nisi ullam nesciunt temporibus exercitationem, quis esse nihil in mollitia aperiam omnis, culpa repellat officia suscipit eos? Ea officia atque, velit molestias, non nobis cumque quibusdam tenetur dicta repellendus esse excepturi quam tempore explicabo totam ex reiciendis. Dolorum, esse.
+            </div>
+            <div class="tab_content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis vitae debitis nisi ullam nesciunt temporibus exercitationem, quis esse nihil in mollitia aperiam omnis, culpa repellat officia suscipit eos? Ea officia atque, velit molestias, non nobis cumque quibusdam tenetur dicta repellendus esse excepturi quam tempore explicabo totam ex reiciendis.
+
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const tabList = document.querySelectorAll('.tab_list');
+        tabList.forEach((list)=> {//li 하나하나 받아오기
+            list.addEventListener('click',(e)=>{ //li에 이벤트를 걸엇다 
+                const tabContent=document.querySelectorAll('.tab_content');
+                let tabNum =  e.currentTarget.getAttribute('data-tabnum');
+                console.log(tabNum) //전체 off하는 작업
+                tabContent.forEach((contentele, index) => {
+                    contentele.style.display='none'; //컨텐츠를 다 안보이게 한것 
+                    tabList[index].className='tab_list' //챕 리스트의 액티브 클래스를 다 안보이게 한다.
+                })
+                //해당요소만 on
+                tabContent[tabNum].style.display = 'block' ; 
+                if(list.className.indexOf('tab_active') == -1){
+                    list.className =  'tab_list tab_active'
+                 }
+            })
+
+        })
+
+    </script>
+</body>
+</html>

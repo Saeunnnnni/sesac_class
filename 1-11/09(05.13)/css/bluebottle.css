@@ -1,0 +1,183 @@
+html,body{
+
+    text-size-adjust:none;
+    font-size: 16px;
+
+}
+a{display: block;}
+body{overflow-x: hidden;}
+
+/* header */
+.header{
+    background-color: #242424; 
+    height: 70px;
+    position: relative;
+
+}
+.header h1{
+    height: 70px; width: 150; 
+    margin: auto; text-indent: -9999%; font-size: 0;
+    background: url(../img/icon/text-logo.png) no-repeat center ;
+    background-size: auto 31px;}
+
+.header h1 a{height: 100%;}
+
+.header .home-btn{
+    text-indent: -9999px; width: 36px; height: 34px;
+    background:  url(../img/icon/toplogo.png) no-repeat center/ 12px auto;
+    position: absolute; left: 20px; top: 18px;
+    ;
+}
+.header .menu-btn{
+    text-indent: -9999px; width: 46px; height: 46px;
+    background:  url(../img/icon/menu-btn.png) no-repeat center/ 29px auto;
+    position: absolute; right:  16px; top: 12px;
+    ;
+}
+.main-banner li{
+    position: relative;
+}
+
+.main-banner li img{
+    width: 100%;
+    ;
+
+}
+
+.main-banner li a{
+    position: absolute;
+    width: 38.055vw; height: 10.277vw;
+    background-color: #fff;
+    text-align: center ;
+    bottom: 17.777vw; left:50% ;transform:translateX(-50%);
+    font-size: 3.88vw; line-height: 10.2777vw;
+}
+.subscribe-area{
+    padding: 12.222vw 0;
+
+}
+.subscribe-area .subscribe-title{
+    font-size: 4.44vw; color:#36373b;
+    text-align: center;
+    line-height: 1.79;
+    margin-bottom: 3.888vw;
+    text-align: center;
+}
+.subscribe-area .subscribe-list li{
+    text-align: center;
+    margin-bottom: 3.33vw
+   
+}
+.subscribe-area .subscribe-list li img{
+    width: 73.888vw;
+}
+.subscribe-area .subscribe_btn{
+    width: 64.722vw;
+    height: 16.3888vw;
+    font-size: 4.4444vw;
+    text-align:center;
+    color:#fff;
+    background-color: #36373b;
+    line-height: 16.389vw;   
+    margin: 5.55vw auto 0;   
+}
+
+/* 메뉴영역 */
+.menu-area{
+    background: url(../img/menu-bg.png) no-repeat top center / cover ; padding : 16.111vw 4.444vw 14.722vw
+}
+.menu-area .menu-title{
+    color:#fff;
+    text-align: center;
+    font-size: 8.055vw; padding-top:4.44vw;
+    position: relative;
+}
+.menu-area .menu-title::before{
+    position: absolute;
+    content: ''; display: block;
+    top:0; left: 50%; transform: translateX(-50%);
+    background-color: #1da4d9;
+    width: 10.833vw; height: 1.389vw;
+}
+.menu-area .menu-title-sub{
+    color:#1da4d9;
+    text-align: center;
+    margin-top: 3.889vw;
+    font-size: 3.889vw;
+    margin-bottom: 8.889vw;
+}
+/* .menu-area .menu-list{
+    background-color: red;
+} */
+.menu-area .menu-list>li{
+    float: left;
+  width: calc(50% - 4.5px);    
+}
+.menu-area .menu-list>li:nth-child(2n+1){margin-right: 4.5px;}
+.menu-area .menu-list>li:nth-child(2n){margin-left: 4.5px;}
+.menu-area .menu-list>li img{width: 100%;}
+.menu-area .menu-list>li span{display: block;}
+.menu-area .menu-list>li .menu-thum-txt{
+    text-align: center;
+    color:#a1a1a1;
+    padding:3.889vw 0
+}
+.menu-area .menu-list>li .menu-thum-txt strong{
+     color:#fff;
+     display: block;
+}
+.menu-area .menu-allview-btn{
+    margin:auto;
+    color:#fff;
+    border: 1px solid #464646;
+    background-color: #1da4d9;
+
+    width: 45.55vw; height: 13.35vw;
+    margin-top:11.66vw; line-height: 13.35vw;
+    font-size:3.6vw; text-align: center;
+    
+}
+.best-menu-area{
+    width: 100vw;
+    height: 175.222vw;
+    padding : 9.166vw 5vw 7.778vw 4.166vw;
+    background-color: 
+    #ebebeb;
+    position: relative;
+}
+.best-menu-area .best-title{
+    color:#36373b;
+    text-align: left;
+    font-size: 5.833vw; padding-top:3.44vw;
+   
+}
+.best-menu-area .best-title::before{
+    position: absolute;
+    content: ''; display: block;
+   
+    background-color: #36373b;
+    width: 10.277vw; height: 1.666vw;
+}
+.best-menu-area .best-title-sub{
+    color:#36373b;
+    text-align: left;
+    margin-top: 4.166vw;
+    font-size: 3.611vw;
+    margin-bottom: 4.7222vw;
+}
+.best-menu-area .best-menu{
+    width: 90.833vw;
+    height: 124.722vw; background-color:#fff
+
+}
+.best-menu-area .best-menu .best-menu-img{
+        height: 325px; ;
+        
+   
+}
+
+.best-menu-area .best-menu .best-menu-title{font-size: 5.277vw; margin-bottom: 4.7222vw;  margin-top:4.7222vw; text-align: left ; padding: 8.333vw 5.8444vw 8.333vw 8.888vw;
+}
+.best-menu-area .best-menu .menu-text{font-size: 3.194vw;
+text-align: left;
+padding: 8.333vw 5.8444vw 8.333vw 8.888vw; }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 700px;border:1px solid red;
+            white-space: pre-line;
+        }
+        p{
+            border:1px solid blue;
+            width: 300px;
+            white-space:nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+    </style>
+    <!-- 
+        <pre></pre> 자유형식유지  enter키 space-bar적용되는 태그 
+        white-space : 공백 처리 속성
+        normal-자동줄바꿈 (기)
+        nowrap-자동줄바꿈 안됨 
+        pre 자동줄바꿈 안됨 / pre태그 처럼 공백 엔터 인식 
+        pre-wrap  자동줄바꿈 됨  / pre태그 처럼 공백 엔터 인식 
+        pre-line   자동줄바꿈 됨 / 엔터 인식 , space 인식 안됨 
+   -->
+</head>
+<body>
+    <div>
+        Lorem                              ipsum dolor sit amet consectetur adipisicing elit.
+
+        Exercitationem quod natus saepe blanditiis quos velit dolor perferendis sit maiores rerum ullam qui, quidem nesciunt illo! Deleniti, mollitia beatae? Totam dolores laboriosam perspiciatis exercitationem quia, beatae eos sit! Dolorum impedit unde, porro distinctio praesentium aut ipsum laboriosam aliquam architecto vero quia, temporibus quas totam incidunt officia omnis repudiandae minus, velit mollitia. Doloremque repellat 
+
+        consectetur, optio cum nostrum officiis in, fugiat facere hic illo eius sed. Dolores facilis aspernatur maiores incidunt eius cumque esse ab eaque quo quibusdam, laudantium sunt inventore placeat tempore deserunt excepturi ipsum, saepe voluptatem. Voluptates qui culpa magnam.
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae qui magnam ipsum culpa eaque molestias veritatis aperiam minima aliquam optio officia dignissimos saepe officiis iure commodi, non totam atque ex?
+    </p>
+    <pre>
+        Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. 
+        Vitae qui magnam ipsum culpa eaque molestias 
+        veritatis aperiam minima aliquam optio officia 
+        dignissimos saepe officiis iure commodi,                        non totam atque ex?
+    </pre> 
+</body>
+</html>
+

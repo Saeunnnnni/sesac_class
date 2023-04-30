@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link 
+    rel="stylesheet"   
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css" 
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <style>
+        .mainbanner{width: 960px;height: 400px; margin: 50px auto 0; position: relative;}
+
+        .swiper-button-prev:after{
+            content:'' !important;
+            display: block;
+            background: url(img/prev.png) no-repeat;
+            width: 55px; height: 105px;
+        }
+        .swiper-button-prev{left: 50px !important}
+
+        .swiper-pagination-bullet{width: 15px;height: 15px; background-color: brown;}
+
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: -30px;
+        }        /* 동그라미 세개를 그림 밖으로 빼는거    */
+
+
+    </style>
+</head>
+<body>
+<div class="mainbanner" >
+    <div class="swiper">        
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/can/slide01.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/can/slide02.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/can/slide03.png" alt=""></div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+       
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+  
+    </div>
+    <div class="swiper-pagination"></div>
+</div>   
+<script>
+    const bannerSlider = new Swiper('.mainbanner .swiper', { //한장에 여러개를 붙였을떄 경로를 안붙이면 에러가 날 수 있으니까 경로를 붙여줘야해
+        speed: 400, //사진이 움직이는 속도 
+        spaceBetween: 0,  //사진과 사진 사이의 간격
+       /*  autoplay : {
+            delay :2000,
+        } ,//자동으로 넘어감  *//* _ true하면 디폴트 / 속성을 정하려면 {}안에 넣으면 됨  */
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets', 
+            clickable :true,
+        },
+    })
+</script>
+    
+</body>
+</html>

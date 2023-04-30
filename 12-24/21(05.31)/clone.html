@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+     @import url(css/reset.css);
+        html,body{height: 100%; background: url(img/gallery/08.jpg) no-repeat  center;background-size: cover}
+        .gnb{position: fixed;left:100px;top:100px;z-index: 100}
+        .gnb li{height: 60px;/* border:5px solid green; */overflow: hidden}
+        .gnb li a{display: block;height: 60px;line-height: 60px;font-size: 40px;font-weight: bold;font-family: 'arial';color:#fff;opacity:.6;position: relative;transition:top .3s;}
+    </style>
+ 
+</head>
+<body>
+    <ul class="gnb">
+        <li> <!-- 공백 = 텍스트 노드 -->
+            <a href="#">Menu1</a>
+        </li>
+        <li>
+            <a href="#">Menu2</a>
+        </li>
+        <li>
+            <a href="#">Menu3</a>
+        </li>
+        <li>
+            <a href="#">Menu4</a>
+        </li>
+    </ul>
+    <script>
+       const lists = document.querySelector('.gnb');
+       const list = document.querySelectorAll('.gnb li');
+
+       list.forEach((ele)=>{
+           let newA = ele.children[0].cloneNode(true); //클론노드같은 경우 , 앞의 대상 노드가 오고 클론 노드가 오면 됨 앞에 있는 노드를 복제한다고 생각하면 됨 해당 노드만 복사하려면 false 노드의 children을 복제하려면 true 를 넣어주면 됨 
+           console.log(newA)
+           newA.style.opacity = '1' ;          
+           ele.appendChild(newA) //li의 마지막 자식으로 동적으로 복제를 만듬 
+       /* 둘의 차이점 기억하기 
+        console.log(ele.childNodes) //텍스트 노드까지 다 받는다고 생각하면 되고 
+        console.log(ele.children) //ele의 태그만 받는다고 생각하면 됨 */
+ 
+       })
+       list.forEach((ele)=>{
+           let childA = ele.children ;
+           console.log(childA)
+           console.log(childA.length)
+           //마우스가 over 부분
+           ele.addEventListener('mouseover',()=>{
+            for(let i=0; i<childA.length;i++){
+               childA[i].style.top='-60px';
+           }
+
+           })
+           //마우스가 out 부분
+           ele.addEventListener('mouseout',()=>{
+            for(let i=0; i<childA.length;i++){
+               childA[i].style.top='0px';
+           }
+
+           })
+          
+       })
+   
+        </script>
+</body>
+</html>

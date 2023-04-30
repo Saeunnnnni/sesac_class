@@ -1,0 +1,39 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "오채아",
+        "email": "erkdot@naver.com",
+        "tel": "010-7895-4582",
+        "nickname": "사탕"
+      },
+      {
+        "id": 2,
+        "name": "정지영",
+        "email": "kdeor@daum.net",
+        "tel": "010-7851-4665",
+        "nickname": "커피"
+      },
+      {
+        "id": 3,
+        "name": "정지혜",
+        "email": "dfet@google.com",
+        "tel": "010-4523-1565",
+        "nickname": "새싹"
+      },
+      {
+        "id": 4,
+        "name": "임지영",
+        "email": "kseor@naver.com",
+        "tel": "010-3564-5246",
+        "nickname": "고구마"
+      },
+      {
+        "id": 5,
+        "name": "김민희",
+        "email": "wpeghdk@google.com",
+        "tel": "010-3256-8756",
+        "nickname": "미니미"
+      }
+    ]
+  }

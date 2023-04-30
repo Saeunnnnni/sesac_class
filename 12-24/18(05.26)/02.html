@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0 ; padding : 0;}
+        ul,li{list-style: none;}
+        ul{display: flex;}
+        ul.on{display: none;}
+        li{width: 150px; height: 150px; text-align: center; line-height: 150px; border:2px solid #367 ; margin: 10px;}
+        ul.on{background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <h1 id="logo">타이틀</h1>
+    <ul>
+        <li class="list">1</li>
+        <li class="list">2</li>
+        <li class="list">3</li>
+        <li class="list">4</li>
+        <li class="list">5</li>
+        <li class="list">6</li>
+
+    </ul>
+    <script>
+       /*  const logo = document.querySelector('#logo')
+        const list = document.querySelectorAll('.list');
+        logo.addEventListener('click',()=>{
+            list.forEach(()=>{
+                li.classList.toggle('on')
+            })
+
+
+        }) */
+        const logo = document.querySelector('#logo')
+        const ul = document.querySelector('ul');
+        logo.addEventListener('click',()=>{
+            
+                ul.classList.toggle('on')
+            })
+
+
+    
+    </script>
+    
+</body>
+</html>

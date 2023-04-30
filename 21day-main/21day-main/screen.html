@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/screen.css" rel="stylesheet">
+    <style>
+        #imgslider{transition: left 0.5s;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="screen">
+            <ul id="imgslider" class="clearfix">
+                <li><img src="img/hero/slide01.png" alt=""></li>
+                <li><img src="img/hero/slide02.png" alt=""></li>
+                <li><img src="img/hero/slide03.png" alt=""></li>
+                <li><img src="img/hero/slide04.png" alt=""></li>
+                <li><img src="img/hero/slide05.png" alt=""></li>
+            </ul>
+        </div>
+        <!--//스크린-->
+        <div id="icons" class="clearfix">
+            <a href="#" class="icon01" data-index='0'>>Avengers</a>
+            <a href="#" class="icon02" data-index='1'>X-Men</a>
+            <a href="#" class="icon03" data-index='2'>Transformer</a>
+            <a href="#" class="icon04" data-index='3'>Superman</a>
+            <a href="#" class="icon05" data-index='4'>Batman</a>
+        </div>
+        <!--//아이콘-->
+    </div>
+    <!--//메인-->
+    <div id="control">
+        <a href="#" class="prev">prev</a>
+        <a href="#" class="next">>next</a>
+    </div>
+    <!--//컨트롤-->
+
+    <script>
+        const iconList = document.querySelector('#icons');
+        const icons = document.querySelectorAll('#icons a');
+        const imgSlider = document.querySelector('#imgslider');
+        const prevBtn=document.querySelector('.prev');
+        const nextBtn=document.querySelector('.next');
+  
+        //아이콘 클릭시 애니메이션 
+        icons.forEach((ele)=>{
+            ele.addEventListener('click',function(e){
+                let selected = e.target;
+                let indexNum = selected.dataset.index ;
+                let target=indexNum*-960;
+                imgSlider.style.left = target+'px';
+                selectIcon(selected)
+                current=indexNum
+                console.log( current)
+            })
+        })
+        // 아이콘에 클래스 적용 
+        function selectIcon(selected) {
+            icons.forEach((ele) => {
+                ele.classList.remove('on');
+            })
+            selected.classList.add('on')
+        }
+
+        //next prev 내비 버튼 애니메이션 
+        let event = new Event('click')
+        let current=0;
+        prevBtn.addEventListener('click',()=>{
+            current--;
+            if(current<0)current=4;
+            icons[current].dispatchEvent(event);
+           
+        })
+
+        nextBtn.addEventListener('click',()=>{
+            current++;
+            if(current>4)current=0;
+            icons[current].dispatchEvent(event);
+         
+        })
+
+
+       
+    </script>
+</body>
+</html>

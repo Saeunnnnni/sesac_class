@@ -1,0 +1,8 @@
+.friend-namecard{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    color:#fff;
+    font-size: 15px;
+    background-color: violet;
+}

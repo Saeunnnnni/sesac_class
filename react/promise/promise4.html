@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{border : 5px solid #000}
+    .one{width: 600px; height: 100px; border: 1px solid red; margin:10px;}
+</style>
+<body>
+    <div class="box">
+
+    </div>
+
+    <script>
+        const box=document.querySelector('.box');
+        const data=['./jsonData-1.json','./jsonData-2.json','./jsonData-3.json','./jsonData-4.json'];
+
+        const mkElment = (num)=>{
+            let mkDiv = document.createElement('div');
+            mkDiv.setAttribute('class','one')
+            mkDiv.innerText='num';
+            box.append(mkDiv)
+
+        }
+    /*     const fnc=(async)=>{
+        await fetch(data[0]
+        .then(()=>{mkElment('1')}));
+
+        await fetch(data[1].then(()=>{mkElment('2')}));
+
+        await fetch(data[2].then(()=>{mkElment('3')}));
+
+        await fetch(data[3]
+        .then(()=>{mkElment('4')}));
+         }
+         fnc(); 이렇게 해도 되고 아래처럼 즉시실행함수로 바로 실행시켜도 됨 
+         그러면 따로 함수를 만들지 않아도 실행할수 있으니까 
+         바로실행 할 함수임으로 즉시실행으로 실핼 할 수도 있다.*/
+    
+        ((async)=>{
+        await fetch(data[0]
+        .then(()=>{mkElment('1')}));
+
+        await fetch(data[1].then(()=>{mkElment('2')}));
+
+        await fetch(data[2].then(()=>{mkElment('3')}));
+
+        await fetch(data[3]
+        .then(()=>{mkElment('4')}));
+         }
+
+         )()//즉시실행함수 
+
+
+
+
+         //async await 
+         //awatit 진행중인 구문이 끝날때까지 기다리게 하는 구문
+         // 앞에 붙여주면 첫번째 구문이 끝날때까지 기다리고 끝나면 그 다음 구문이 실행되게 하는거  근데 async를 붙여서 사용을 해야지 오류가 안난다 
+         //await를 쓰려면 감싸는 함수를 만들어서  async 를 붙여야 한다.  
+         //async 함수 앞에 붙여서 비동기로 돌아가게 해준다.
+ 
+
+        </script>
+</body>
+</html>
